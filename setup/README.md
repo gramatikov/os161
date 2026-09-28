@@ -1,8 +1,7 @@
 
-Followed the instructions here:
+This document provides a path for setting up System/161 and OS/161. I followed the instructions here:
 
 https://people.ece.ubc.ca/os161/os161-site/install-docker.html
-
 
 ```console
 wget https://people.ece.ubc.ca/~os161/download/os161-cpen331-docker.tar.gz
@@ -12,8 +11,8 @@ cd os161-cpen331-docker
 docker build -t os161 .
 ```
 
-The os161-cpen331-docker.tar.gz file is uploaded here. The docker file contains a `#FROM debian:11` line which I replaced with `FROM debian`. The build was then successful. Note that the docker
-file pulls files from the UBC website. I have uploaded those files here as well.
+The os161-cpen331-docker.tar.gz file is uploaded here. The docker file contains a `#FROM debian:11` line which I replaced with `FROM debian`. My docker build was then successful. Note that the docker
+file pulls files from the UBC website. I have uploaded a files.txt with the urls. Some of these files were large (gcc, gdb, binutils) and were therefore not uploaded here. However if the UBC links no longer work, I believe they are also hosted on http://www.os161.org/.
 
 
 Running the container
