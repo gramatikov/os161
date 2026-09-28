@@ -14,3 +14,18 @@ docker build -t os161 .
 
 The os161-cpen331-docker.tar.gz file is uploaded here. The docker file contains a `#FROM debian:11` line which I replaced with `FROM debian`. The build was then successful. Note that the docker
 file pulls files from the UBC website. I have uploaded those files here as well.
+
+
+Running the container
+
+The following command mounts the home directory. I replaced "/home/OS_BASE".
+
+```console
+docker run -dit --mount type=bind,src=/home/OS_BASE,target=/root/os161 --rm --name os161 os161
+```
+You now have to get the container ID by running `docker ps`. Then run 
+
+```console
+docker exec -it <ID> /bin/bash
+```
+with your ID.
