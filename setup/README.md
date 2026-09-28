@@ -12,7 +12,7 @@ docker build -t os161 .
 ```
 
 The os161-cpen331-docker.tar.gz file is uploaded here. The docker file contains a `#FROM debian:11` line which I replaced with `FROM debian`. My docker build was then successful. Note that the docker
-file pulls files from the UBC website. I have uploaded a files.txt with the urls. Some of these files were large (gcc, gdb, binutils) and were therefore not uploaded here. However if the UBC links no longer work, I believe they are also hosted on http://www.os161.org/.
+file pulls files from the UBC website. I have uploaded a file, urls.txt, with the file links. Some of these files were large (gcc, gdb, binutils) and were therefore not uploaded here. However if the UBC links no longer work, I believe they are also hosted on http://www.os161.org/.
 
 
 # Running the container
@@ -42,4 +42,13 @@ The tutorial assumes your extracted directory is `~/os161/src`. Run:
 cd ~/os161/src
 ./configure --ostree=$HOME/os161/root
 ```
+
+To be continued....
+
+I just saved some PDFs under /instructions.
+
+# Additional Resources
+
+1. https://ops-class.org/
+2. https://www.youtube.com/watch?v=IxX4uwET3_U
 
