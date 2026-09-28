@@ -14,4 +14,4 @@ cd os161-cpen331-docker
 docker build -t os161 .
 ```
 
-The docker file contains a "#FROM debian:11" which I replaced with "FROM debian"
+The docker file contains a `#FROM debian:11` line which I replaced with `FROM debian`. The build was then successful.
